@@ -1,83 +1,222 @@
 {
   "Homepage": {
-    "title": "दोस्तों और परिवार के साथ <strong>खर्चे</strong> साझा करें",
-    "description": "आपके नए <strong>M.A.R.S Split</strong> में स्वागत है!",
+    "title": "दोस्तों और परिवार के साथ <strong>खर्च</strong> साझा करें",
+    "description": "आपके नए <strong>Fair Split</strong> इंस्टेंस में स्वागत है!",
     "button": {
-      "groups": "ग्रुप्स पर जाएं",
+      "groups": "समूह पर जाएँ",
       "github": "GitHub"
     }
   },
   "Header": {
-    "groups": "ग्रुप्स"
+    "groups": "समूह"
   },
   "Footer": {
-    "madeIn": "पुणे, भारत 🇮🇳 में बनाया गया",
-    "builtBy": "<author>VIIT कॉलेज छात्रों</author>, पुणे द्वारा बनाया गया"
+    "madeIn": "पुणे, महाराष्ट्र, भारत 🇮🇳 में बनाया गया",
+    "builtBy": "टीम M.A.R.S, VIIT कॉलेज के छात्रों, पुणे, महाराष्ट्र, भारत द्वारा बनाया गया"
   },
   "Expenses": {
     "title": "खर्चे",
-    "description": "यहाँ वे खर्चे हैं जो आपने अपने ग्रुप के लिए बनाए हैं।",
+    "description": "यहाँ आपके समूह के लिए बनाए गए खर्चे हैं।",
     "create": "खर्च जोड़ें",
-    "createFirst": "पहला खर्च बनाएं",
-    "noExpenses": "आपके ग्रुप में अभी तक कोई खर्च नहीं है।",
-    "export": "निर्यात करें",
+    "createFirst": "पहला खर्च जोड़ें",
+    "noExpenses": "आपके समूह में अभी कोई खर्च नहीं है।",
+    "export": "निर्यात",
     "exportJson": "JSON में निर्यात करें",
     "exportCsv": "CSV में निर्यात करें",
     "searchPlaceholder": "खर्च खोजें…",
     "ActiveUserModal": {
       "title": "आप कौन हैं?",
-      "description": "हमें बताएं कि आप कौन से प्रतिभागी हैं ताकि हम जानकारी को अनुकूलित कर सकें।",
-      "nobody": "मैं किसी को नहीं चुनना चाहता",
-      "save": "परिवर्तन सहेजें",
-      "footer": "यह सेटिंग बाद में ग्रुप सेटिंग्स में बदली जा सकती है।"
+      "description": "हमें बताइए आप कौन से प्रतिभागी हैं ताकि हम जानकारी को आपके अनुसार दिखा सकें।",
+      "nobody": "मैं कोई नहीं चुनना चाहता",
+      "save": "बदलाव सहेजें",
+      "footer": "यह सेटिंग बाद में समूह सेटिंग्स में बदली जा सकती है।"
     },
     "Groups": {
       "upcoming": "आगामी",
       "thisWeek": "इस सप्ताह",
-      "earlierThisMonth": "इस महीने की शुरुआत में",
+      "earlierThisMonth": "इस महीने पहले",
       "lastMonth": "पिछला महीना",
-      "earlierThisYear": "इस साल की शुरुआत में",
+      "earlierThisYear": "इस साल पहले",
       "lastYear": "पिछला साल",
       "older": "पुराने"
     }
   },
   "ExpenseCard": {
-    "paidBy": "<paidFor></paidFor> के लिए <strong>{paidBy}</strong> द्वारा भुगतान",
-    "everyone": "सभी के लिए",
-    "receivedBy": "<paidFor></paidFor> के लिए <strong>{paidBy}</strong> द्वारा प्राप्त",
+    "paidBy": "<paidFor></paidFor> के लिए <strong>{paidBy}</strong> ने भुगतान किया",
+    "everyone": "सभी",
+    "receivedBy": "<paidFor></paidFor> के लिए <strong>{paidBy}</strong> ने प्राप्त किया",
     "yourBalance": "आपका बैलेंस:",
-    "notInvolved": "आप शामिल नहीं हैं"
+    "notInvolved": "आप इसमें शामिल नहीं हैं"
   },
   "Groups": {
-    "myGroups": "मेरे ग्रुप्स",
-    "create": "बनाएं",
-    "loadingRecent": "हाल के ग्रुप्स लोड हो रहे हैं…",
+    "myGroups": "मेरे समूह",
+    "create": "बनाएँ",
+    "loadingRecent": "हाल के समूह लोड हो रहे हैं…",
     "NoRecent": {
-      "description": "आपने हाल ही में कोई ग्रुप नहीं देखा है।",
-      "create": "एक बनाएं",
-      "orAsk": "या किसी मित्र से मौजूदा ग्रुप की लिंक भेजने के लिए कहें।"
+      "description": "आपने हाल ही में किसी समूह को नहीं देखा है।",
+      "create": "एक नया बनाएँ",
+      "orAsk": "या किसी दोस्त से मौजूदा समूह का लिंक माँगें।"
     },
-    "recent": "हाल के ग्रुप्स",
-    "starred": "पसंदीदा ग्रुप्स",
-    "archived": "आर्काइव किए गए ग्रुप्स",
-    "archive": "ग्रुप आर्काइव करें",
-    "unarchive": "ग्रुप अनआर्काइव करें",
-    "removeRecent": "हाल के ग्रुप्स से हटाएं",
+    "recent": "हाल के समूह",
+    "starred": "पसंदीदा समूह",
+    "archived": "संग्रहीत समूह",
+    "archive": "समूह संग्रहीत करें",
+    "unarchive": "समूह पुनः प्राप्त करें",
+    "removeRecent": "हाल के समूह से हटाएँ",
     "RecentRemovedToast": {
-      "title": "ग्रुप हटा दिया गया",
-      "description": "ग्रुप को आपके हाल के ग्रुप्स से हटा दिया गया।",
-      "undoAlt": "ग्रुप हटाना पूर्ववत करें",
-      "undo": "पूर्ववत करें"
+      "title": "समूह हटाया गया",
+      "description": "समूह को आपकी हाल की सूची से हटा दिया गया है।",
+      "undoAlt": "समूह हटाना वापस लें",
+      "undo": "वापस लें"
     },
     "AddByURL": {
       "button": "URL से जोड़ें",
-      "title": "URL द्वारा ग्रुप जोड़ें",
-      "description": "अगर कोई ग्रुप आपके साथ साझा किया गया है, तो उसे जोड़ने के लिए यहाँ उसका URL पेस्ट करें।",
-      "error": "क्षमा करें, दिए गए URL से कोई ग्रुप नहीं मिला…"
+      "title": "URL से समूह जोड़ें",
+      "description": "अगर कोई समूह आपके साथ साझा किया गया है, तो उसका URL यहाँ पेस्ट करें।",
+      "error": "ओह! दिए गए URL से कोई समूह नहीं मिला…"
     },
     "NotFound": {
-      "text": "यह ग्रुप मौजूद नहीं है।",
-      "link": "हाल ही में देखे गए ग्रुप्स पर जाएं"
+      "text": "यह समूह मौजूद नहीं है।",
+      "link": "हाल ही में देखे गए समूहों पर जाएँ"
     }
+  },
+  "GroupForm": {
+    "title": "समूह जानकारी",
+    "NameField": {
+      "label": "समूह का नाम",
+      "placeholder": "गर्मी की छुट्टियाँ",
+      "description": "अपने समूह का नाम दर्ज करें।"
+    },
+    "InformationField": {
+      "label": "समूह जानकारी",
+      "placeholder": "समूह के प्रतिभागियों के लिए कोई महत्वपूर्ण जानकारी?"
+    },
+    "CurrencyField": {
+      "label": "मुद्रा चिन्ह",
+      "placeholder": "$, €, £…",
+      "description": "राशि दिखाने के लिए इसका उपयोग किया जाएगा।"
+    },
+    "Participants": {
+      "title": "प्रतिभागी",
+      "description": "हर प्रतिभागी का नाम दर्ज करें।",
+      "protectedParticipant": "यह प्रतिभागी खर्च का हिस्सा है और हटाया नहीं जा सकता।",
+      "new": "नया",
+      "add": "प्रतिभागी जोड़ें",
+      "John": "जॉन",
+      "Jane": "जेन",
+      "Jack": "जैक"
+    },
+    "Settings": {
+      "title": "लोकल सेटिंग्स",
+      "description": "ये सेटिंग्स डिवाइस-आधारित हैं और अनुभव को व्यक्तिगत बनाने के लिए उपयोग होती हैं।",
+      "ActiveUserField": {
+        "label": "सक्रिय उपयोगकर्ता",
+        "placeholder": "प्रतिभागी चुनें",
+        "none": "कोई नहीं",
+        "description": "खर्च जोड़ने के लिए डिफ़ॉल्ट उपयोगकर्ता।"
+      },
+      "save": "सहेजें",
+      "saving": "सहेजा जा रहा है…",
+      "create": "बनाएँ",
+      "creating": "बनाया जा रहा है…",
+      "cancel": "रद्द करें"
+    }
+  },
+  "ExpenseForm": {
+    "Income": {
+      "create": "आय जोड़ें",
+      "edit": "आय संपादित करें",
+      "TitleField": {
+        "label": "आय शीर्षक",
+        "placeholder": "सोमवार शाम का रेस्टोरेंट",
+        "description": "आय का विवरण दर्ज करें।"
+      },
+      "DateField": {
+        "label": "आय तिथि",
+        "description": "आय प्राप्त होने की तिथि दर्ज करें।"
+      },
+      "categoryFieldDescription": "आय श्रेणी चुनें।",
+      "paidByField": {
+        "label": "प्राप्त किया",
+        "description": "किसने आय प्राप्त की, चुनें।"
+      },
+      "paidFor": {
+        "title": "किसके लिए प्राप्त",
+        "description": "आय किसके लिए प्राप्त हुई, चुनें।"
+      },
+      "splitModeDescription": "आय कैसे बाँटनी है चुनें।",
+      "attachDescription": "आय के लिए रसीदें देखें और जोड़ें।"
+    },
+    "Expense": {
+      "create": "खर्च जोड़ें",
+      "edit": "खर्च संपादित करें",
+      "TitleField": {
+        "label": "खर्च शीर्षक",
+        "placeholder": "सोमवार शाम का रेस्टोरेंट",
+        "description": "खर्च का विवरण दर्ज करें।"
+      },
+      "DateField": {
+        "label": "खर्च तिथि",
+        "description": "खर्च कब हुआ, दर्ज करें।"
+      },
+      "categoryFieldDescription": "खर्च श्रेणी चुनें।",
+      "paidByField": {
+        "label": "किसने भुगतान किया",
+        "placeholder": "प्रतिभागी चुनें",
+        "description": "खर्च किसने चुकाया, चुनें।"
+      },
+      "recurrenceRule": {
+        "label": "खर्च दोहराव",
+        "description": "खर्च कितनी बार दोहराना है चुनें।",
+        "none": "नहीं",
+        "daily": "दैनिक",
+        "weekly": "साप्ताहिक",
+        "monthly": "मासिक"
+      },
+      "paidFor": {
+        "title": "किसके लिए भुगतान किया",
+        "description": "खर्च किसके लिए किया गया, चुनें।"
+      },
+      "splitModeDescription": "खर्च कैसे बाँटना है चुनें।",
+      "attachDescription": "खर्च के लिए रसीदें देखें और जोड़ें।"
+    },
+    "amountField": {
+      "label": "राशि"
+    },
+    "isReimbursementField": {
+      "label": "यह प्रतिपूर्ति है"
+    },
+    "categoryField": {
+      "label": "श्रेणी"
+    },
+    "notesField": {
+      "label": "नोट्स"
+    },
+    "selectNone": "कोई नहीं चुनें",
+    "selectAll": "सभी चुनें",
+    "shares": "शेयर(स्)",
+    "advancedOptions": "उन्नत बाँटने के विकल्प…",
+    "SplitModeField": {
+      "label": "बाँटने की विधि",
+      "evenly": "समान",
+      "byShares": "असमान – शेयर के अनुसार",
+      "byPercentage": "असमान – प्रतिशत के अनुसार",
+      "byAmount": "असमान – राशि के अनुसार",
+      "saveAsDefault": "डिफ़ॉल्ट बाँटने का विकल्प सहेजें"
+    },
+    "DeletePopup": {
+      "label": "हटाएँ",
+      "title": "क्या आप यह खर्च हटाना चाहते हैं?",
+      "description": "क्या आप वाकई यह खर्च हटाना चाहते हैं? इसे वापस नहीं लाया जा सकता।",
+      "yes": "हाँ",
+      "cancel": "रद्द करें"
+    },
+    "attachDocuments": "दस्तावेज़ जोड़ें",
+    "create": "बनाएँ",
+    "creating": "बनाया जा रहा है…",
+    "save": "सहेजें",
+    "saving": "सहेजा जा रहा है…",
+    "cancel": "रद्द करें",
+    "reimbursement": "प्रतिपूर्ति"
   }
 }

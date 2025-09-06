@@ -1,7 +1,7 @@
 {
   "Homepage": {
     "title": "Share <strong>Expenses</strong> with <strong>Friends & Family</strong>",
-    "description": "Welcome to your new <strong>M.A.R.S Split</strong> instance !",
+    "description": "Welcome to your new <strong>Fair Split</strong> instance !",
     "button": {
       "groups": "Go to groups",
       "github": "GitHub"
@@ -11,8 +11,8 @@
     "groups": "Groups"
   },
   "Footer": {
-    "madeIn": "Made in Pune, India 🇮🇳",
-    "builtBy": "Made by <author>VIIT College Students</author>, Pune"
+    "madeIn": "Made in Pune, Maharashtra, India 🇮🇳",
+    "builtBy": "Made by Team M.A.R.S VIIT College Students, Pune, Maharashtra, India"
   },
   "Expenses": {
     "title": "Expenses",

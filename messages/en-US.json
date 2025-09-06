@@ -1,7 +1,7 @@
 {
   "Homepage": {
     "title": "Share <strong>Expenses</strong> with <strong>Friends & Family</strong>",
-    "description": "Welcome to your new <strong>Spliit</strong> instance !",
+    "description": "Welcome to your new <strong>M.A.R.S Split</strong> instance !",
     "button": {
       "groups": "Go to groups",
       "github": "GitHub"
@@ -11,8 +11,8 @@
     "groups": "Groups"
   },
   "Footer": {
-    "madeIn": "Made in Montréal, Québec 🇨🇦",
-    "builtBy": "Built by <author>Sebastien Castiel</author> and <source>contributors</source>"
+    "madeIn": "Made in Pune, India 🇮🇳",
+    "builtBy": "Made by <author>VIIT College Students</author>, Pune"
   },
   "Expenses": {
     "title": "Expenses",
@@ -168,7 +168,6 @@
       "recurrenceRule": {
         "label": "Expense Recurrence",
         "description": "Select how often the expense should repeat.",
-
         "none": "None",
         "daily": "Daily",
         "weekly": "Weekly",

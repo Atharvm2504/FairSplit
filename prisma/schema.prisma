@@ -12,7 +12,7 @@ datasource db {
 }
 
 model Group {
-  id           String        @id
+  id          String       @id @default(cuid())
   name         String
   information  String?       @db.Text
   currency     String        @default("$")
@@ -20,15 +20,18 @@ model Group {
   expenses     Expense[]
   activities   Activity[]
   createdAt    DateTime      @default(now())
+  balanceHistory BalanceHistory[]
 }
 
 model Participant {
-  id              String           @id
+  id          String       @id @default(cuid())
   name            String
   group           Group            @relation(fields: [groupId], references: [id], onDelete: Cascade)
   groupId         String
   expensesPaidBy  Expense[]
   expensesPaidFor ExpensePaidFor[]
+  balanceHistoryOwedBy  BalanceHistory[] @relation("OwedByHistory")
+  balanceHistoryOwedTo  BalanceHistory[] @relation("OwedToHistory")
 }
 
 model Category {
@@ -126,4 +129,19 @@ enum ActivityType {
   CREATE_EXPENSE
   UPDATE_EXPENSE
   DELETE_EXPENSE
+}
+
+model BalanceHistory {
+  id          String   @id @default(cuid())
+  debtorId    String
+  creditorId  String
+  amount      Float
+  groupId     String
+  recordedAt  DateTime @default(now())
+
+  debtor      Participant @relation("OwedByHistory", fields: [debtorId], references: [id], onDelete: Cascade)
+  creditor    Participant @relation("OwedToHistory", fields: [creditorId], references: [id], onDelete: Cascade)
+  group       Group       @relation(fields: [groupId], references: [id], onDelete: Cascade)
+
+  @@index([groupId, recordedAt])
 }

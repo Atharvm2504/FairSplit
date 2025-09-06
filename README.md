@@ -2,8 +2,6 @@
 
 Spliit is a free and open source alternative to Splitwise. You can either use the official instance at [Spliit.app](https://spliit.app), or deploy your own instance:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fspliit-app%2Fspliit&project-name=my-spliit-instance&repository-name=my-spliit-instance&stores=%5B%7B%22type%22%3A%22postgres%22%7D%5D&)
-
 ## Features
 
 - [x] Create a group and share it with friends
@@ -31,17 +29,7 @@ Spliit is a free and open source alternative to Splitwise. You can either use th
 - [TailwindCSS](https://tailwindcss.com/) for the styling
 - [shadcn/UI](https://ui.shadcn.com/) for the UI components
 - [Prisma](https://prisma.io) to access the database
-- [Vercel](https://vercel.com/) for hosting (application and database)
-
-## Contribute
-
-The project is open to contributions. Feel free to open an issue or even a pull-request!
-Join the discussion in [the Spliit Discord server](https://discord.gg/YSyVXbwvSY).
-
-If you want to contribute financially and help us keep the application free and without ads, you can also:
-
-- 💜 [Sponsor me (Sebastien)](https://github.com/sponsors/scastiel), or
-- 💙 [Make a small one-time donation](https://donate.stripe.com/28o3eh96G7hH8k89Ba).
+- [Neon](https://neon.com/) for hosting (application and database)
 
 ### Translation
 
@@ -124,7 +112,3 @@ You can offer users to automatically deduce the expense category from the title.
 NEXT_PUBLIC_ENABLE_CATEGORY_EXTRACT=true
 OPENAI_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
-
-## License
-
-MIT, see [LICENSE](./LICENSE).

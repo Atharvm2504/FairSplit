@@ -35,7 +35,7 @@ Spliit is a free and open source alternative to Splitwise. You can either use th
 
 ## Contribute
 
-The project is open to contributions. Feel free to open an issue or even a pull-request! 
+The project is open to contributions. Feel free to open an issue or even a pull-request!
 Join the discussion in [the Spliit Discord server](https://discord.gg/YSyVXbwvSY).
 
 If you want to contribute financially and help us keep the application free and without ads, you can also:
@@ -45,7 +45,7 @@ If you want to contribute financially and help us keep the application free and 
 
 ### Translation
 
-The project's translations are managed using [our Weblate project](https://hosted.weblate.org/projects/spliit/spliit/). 
+The project's translations are managed using [our Weblate project](https://hosted.weblate.org/projects/spliit/spliit/).
 You can easily add missing translations to the project or even add a new language!
 Here is the current state of translation:
 
@@ -69,7 +69,7 @@ Here is the current state of translation:
 4. You can access the app by browsing to http://localhost:3000
 
 You could also pull it from the container registry:
-```docker pull ghcr.io/spliit-app/spliit:latest```
+`docker pull ghcr.io/spliit-app/spliit:latest`
 
 ## Health check
 

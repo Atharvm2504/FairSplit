@@ -69,7 +69,7 @@ module.exports = {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
         },
-        'float': {
+        float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' },
         },
@@ -81,7 +81,7 @@ module.exports = {
             boxShadow: '0 0 40px rgba(139, 92, 246, 0.6)',
           },
         },
-        'shimmer': {
+        shimmer: {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
         },
@@ -100,9 +100,9 @@ module.exports = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'gradient-shift': 'gradient-shift 4s ease-in-out infinite',
-        'float': 'float 6s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
         'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'shimmer': 'shimmer 2s linear infinite',
+        shimmer: 'shimmer 2s linear infinite',
         'bounce-gentle': 'bounce-gentle 2s infinite',
       },
       fontFamily: {
@@ -122,28 +122,27 @@ module.exports = {
         ],
       },
       dropShadow: {
-        'glow': '0 0 20px rgba(139, 92, 246, 0.5)',
+        glow: '0 0 20px rgba(139, 92, 246, 0.5)',
         'glow-lg': '0 0 40px rgba(139, 92, 246, 0.3)',
         'pink-glow': '0 0 20px rgba(236, 72, 153, 0.5)',
       },
       boxShadow: {
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        glass: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
         'glass-lg': '0 25px 50px -12px rgba(139, 92, 246, 0.25)',
         'purple-glow': '0 0 40px rgba(139, 92, 246, 0.3)',
         'inner-glow': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'shimmer': 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        shimmer:
+          'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)',
       },
       backdropBlur: {
         xs: '2px',
       },
     },
   },
-  plugins: [
-    require('tailwindcss-animate'), 
-    require('@tailwindcss/typography')
-  ],
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
 }

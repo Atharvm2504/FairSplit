@@ -89,8 +89,12 @@ function Content({ children }: { children: React.ReactNode }) {
             <p className="text-xs text-muted-foreground -mt-1">Split & Share</p>
           </div>
         </Link>
-        
-        <nav role="navigation" aria-label="Main navigation" className="flex items-center">
+
+        <nav
+          role="navigation"
+          aria-label="Main navigation"
+          className="flex items-center"
+        >
           <div className="flex items-center space-x-2">
             <Button
               variant="ghost"
@@ -103,9 +107,9 @@ function Content({ children }: { children: React.ReactNode }) {
                 {t('Header.groups')}
               </Link>
             </Button>
-            
+
             <div className="w-px h-6 bg-gradient-to-b from-transparent via-border to-transparent mx-2"></div>
-            
+
             <LocaleSwitcher />
             <ThemeToggle />
           </div>
@@ -118,15 +122,13 @@ function Content({ children }: { children: React.ReactNode }) {
           <div className="absolute top-1/2 -left-40 w-60 h-60 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-10 animate-bounce-gentle"></div>
           <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-10 animate-pulse"></div>
         </div>
-        
-        <div className="relative z-10">
-          {children}
-        </div>
+
+        <div className="relative z-10">{children}</div>
       </div>
 
       <footer className="relative mt-16 md:mt-32">
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent dark:from-slate-950/80"></div>
-        
+
         <div className="relative glass-card border-t border-white/10 p-6 sm:p-8 md:p-16">
           <div className="flex flex-col sm:flex-row sm:justify-between gap-6 text-sm">
             <div className="flex flex-col space-y-4">
@@ -141,19 +143,23 @@ function Content({ children }: { children: React.ReactNode }) {
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gradient-primary text-lg">Spliit</h3>
-                  <p className="text-muted-foreground text-xs">Split expenses beautifully</p>
+                  <h3 className="font-semibold text-gradient-primary text-lg">
+                    Spliit
+                  </h3>
+                  <p className="text-muted-foreground text-xs">
+                    Split expenses beautifully
+                  </p>
                 </div>
               </div>
-              
+
               <div className="flex flex-col space-y-2 text-muted-foreground">
                 <span>{t('Footer.madeIn')}</span>
                 <div>
                   {t.rich('Footer.builtBy', {
                     author: (txt) => (
-                      <a 
-                        href="https://scastiel.dev" 
-                        target="_blank" 
+                      <a
+                        href="https://scastiel.dev"
+                        target="_blank"
                         rel="noopener"
                         className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 underline transition-colors"
                       >
@@ -174,7 +180,7 @@ function Content({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-col space-y-3 sm:text-right">
               <div className="text-xs text-muted-foreground">
                 Made with 💜 for the community
@@ -188,7 +194,7 @@ function Content({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
-      
+
       <Toaster />
     </TRPCProvider>
   )

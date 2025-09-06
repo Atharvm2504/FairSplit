@@ -1,0 +1,222 @@
+{
+  "Homepage": {
+    "title": "मित्र आणि कुटुंबासोबत <strong>खर्च</strong> शेअर करा",
+    "description": "तुमच्या नवीन <strong>Fair Split</strong> इंस्टन्स मध्ये स्वागत आहे!",
+    "button": {
+      "groups": "गटांकडे जा",
+      "github": "GitHub"
+    }
+  },
+  "Header": {
+    "groups": "गट"
+  },
+  "Footer": {
+    "madeIn": "पुणे, महाराष्ट्र, भारत 🇮🇳 येथे तयार केले",
+    "builtBy": "टीम M.A.R.S, VIIT कॉलेज विद्यार्थी, पुणे, महाराष्ट्र, भारत यांनी तयार केले"
+  },
+  "Expenses": {
+    "title": "खर्च",
+    "description": "तुम्ही तुमच्या गटासाठी तयार केलेले खर्च येथे आहेत.",
+    "create": "खर्च तयार करा",
+    "createFirst": "पहिला तयार करा",
+    "noExpenses": "तुमच्या गटात अजून कोणताही खर्च नाही.",
+    "export": "निर्यात",
+    "exportJson": "JSON मध्ये निर्यात करा",
+    "exportCsv": "CSV मध्ये निर्यात करा",
+    "searchPlaceholder": "खर्च शोधा…",
+    "ActiveUserModal": {
+      "title": "तुम्ही कोण?",
+      "description": "तुम्ही कोणता सहभागी आहात ते आम्हाला सांगा जेणेकरून आम्ही माहिती कस्टमाइज करू शकू.",
+      "nobody": "मला कोणीही निवडायचे नाही",
+      "save": "बदल जतन करा",
+      "footer": "ही सेटिंग नंतर गटाच्या सेटिंगमध्ये बदलली जाऊ शकते."
+    },
+    "Groups": {
+      "upcoming": "येणारा",
+      "thisWeek": "या आठवड्यात",
+      "earlierThisMonth": "या महिन्यात आधी",
+      "lastMonth": "मागील महिना",
+      "earlierThisYear": "या वर्षी आधी",
+      "lastYear": "मागील वर्ष",
+      "older": "जुना"
+    }
+  },
+  "ExpenseCard": {
+    "paidBy": "<paidFor></paidFor> साठी <strong>{paidBy}</strong> ने भरले",
+    "everyone": "सर्व",
+    "receivedBy": "<paidFor></paidFor> साठी <strong>{paidBy}</strong> ने प्राप्त केले",
+    "yourBalance": "तुमचा शिल्लक:",
+    "notInvolved": "तुम्ही यात सहभागी नाही"
+  },
+  "Groups": {
+    "myGroups": "माझे गट",
+    "create": "तयार करा",
+    "loadingRecent": "अलीकडील गट लोड करत आहे…",
+    "NoRecent": {
+      "description": "तुम्ही अलीकडे कोणत्याही गटाला भेट दिली नाही.",
+      "create": "एक तयार करा",
+      "orAsk": "किंवा मित्राला विद्यमान गटाचा दुवा देण्यास सांगा."
+    },
+    "recent": "अलीकडील गट",
+    "starred": "स्टार केलेले गट",
+    "archived": "संग्रहित गट",
+    "archive": "गट संग्रहित करा",
+    "unarchive": "गट अनआर्काइव्ह करा",
+    "removeRecent": "अलीकडील गटातून काढा",
+    "RecentRemovedToast": {
+      "title": "गट काढण्यात आला आहे",
+      "description": "गट तुमच्या अलीकडील गटांच्या यादीतून काढण्यात आला आहे.",
+      "undoAlt": "गट काढणे मागे घ्या",
+      "undo": "मागे घ्या"
+    },
+    "AddByURL": {
+      "button": "URL ने जोडा",
+      "title": "URL ने गट जोडा",
+      "description": "जर एखादा गट तुमच्यासोबत शेअर केला असेल, तर तो जोडण्यासाठी येथे URL पेस्ट करा.",
+      "error": "अरेरे, तुम्ही दिलेल्या URL वरून आम्हाला गट सापडला नाही…"
+    },
+    "NotFound": {
+      "text": "हा गट अस्तित्वात नाही.",
+      "link": "अलीकडे भेट दिलेल्या गटांकडे जा"
+    }
+  },
+  "GroupForm": {
+    "title": "गट माहिती",
+    "NameField": {
+      "label": "गटाचे नाव",
+      "placeholder": "उन्हाळ्याची सुट्टी",
+      "description": "तुमच्या गटासाठी नाव टाका."
+    },
+    "InformationField": {
+      "label": "गट माहिती",
+      "placeholder": "गटातील सहभागींसाठी कोणती माहिती संबंधित आहे?"
+    },
+    "CurrencyField": {
+      "label": "चलन चिन्ह",
+      "placeholder": "$, €, £…",
+      "description": "रक्कम दर्शवण्यासाठी आम्ही त्याचा वापर करू."
+    },
+    "Participants": {
+      "title": "सहभागी",
+      "description": "प्रत्येक सहभागीचे नाव टाका.",
+      "protectedParticipant": "हा सहभागी खर्चाचा भाग आहे आणि काढला जाऊ शकत नाही.",
+      "new": "नवीन",
+      "add": "सहभागी जोडा",
+      "John": "जॉन",
+      "Jane": "जेन",
+      "Jack": "जॅक"
+    },
+    "Settings": {
+      "title": "स्थानिक सेटिंग्ज",
+      "description": "ही सेटिंग्ज प्रति-डिव्हाइस सेट केल्या जातात आणि तुमचा अनुभव कस्टमाइज करण्यासाठी वापरल्या जातात.",
+      "ActiveUserField": {
+        "label": "सक्रिय वापरकर्ता",
+        "placeholder": "सहभागी निवडा",
+        "none": "काहीही नाही",
+        "description": "खर्च भरण्यासाठी वापरला जाणारा डीफॉल्ट वापरकर्ता."
+      },
+      "save": "जतन करा",
+      "saving": "जतन करत आहे…",
+      "create": "तयार करा",
+      "creating": "तयार करत आहे…",
+      "cancel": "रद्द करा"
+    }
+  },
+  "ExpenseForm": {
+    "Income": {
+      "create": "उत्पन्न तयार करा",
+      "edit": "उत्पन्न संपादित करा",
+      "TitleField": {
+        "label": "उत्पन्न शीर्षक",
+        "placeholder": "सोमवार संध्याकाळी रेस्टॉरंट",
+        "description": "उत्पन्नासाठी वर्णन टाका."
+      },
+      "DateField": {
+        "label": "उत्पन्न तारीख",
+        "description": "उत्पन्न मिळाल्याची तारीख टाका."
+      },
+      "categoryFieldDescription": "उत्पन्न श्रेणी निवडा.",
+      "paidByField": {
+        "label": "प्राप्त केले",
+        "description": "उत्पन्न कोणी प्राप्त केले ते निवडा."
+      },
+      "paidFor": {
+        "title": "यासाठी प्राप्त",
+        "description": "उत्पन्न कोणी प्राप्त केले त्यासाठी निवडा."
+      },
+      "splitModeDescription": "उत्पन्न कसे विभाजित करायचे ते निवडा.",
+      "attachDescription": "उत्पन्नासाठी पावत्या पहा आणि जोडा."
+    },
+    "Expense": {
+      "create": "खर्च तयार करा",
+      "edit": "खर्च संपादित करा",
+      "TitleField": {
+        "label": "खर्च शीर्षक",
+        "placeholder": "सोमवार संध्याकाळी रेस्टॉरंट",
+        "description": "खर्चासाठी वर्णन टाका."
+      },
+      "DateField": {
+        "label": "खर्च तारीख",
+        "description": "खर्च केव्हा झाला ते टाका."
+      },
+      "categoryFieldDescription": "खर्च श्रेणी निवडा.",
+      "paidByField": {
+        "label": "कोणाने भरले",
+        "placeholder": "सहभागी निवडा",
+        "description": "खर्च कोणी भरला ते निवडा."
+      },
+      "recurrenceRule": {
+        "label": "खर्च पुनरावृत्ती",
+        "description": "खर्च किती वेळा पुनरावृत्ती करायचा ते निवडा.",
+        "none": "नाही",
+        "daily": "दररोज",
+        "weekly": "साप्ताहिक",
+        "monthly": "मासिक"
+      },
+      "paidFor": {
+        "title": "यासाठी भरले",
+        "description": "खर्च कोणी केला त्यासाठी निवडा."
+      },
+      "splitModeDescription": "खर्च कसा विभाजित करायचा ते निवडा.",
+      "attachDescription": "खर्चासाठी पावत्या पहा आणि जोडा."
+    },
+    "amountField": {
+      "label": "रक्कम"
+    },
+    "isReimbursementField": {
+      "label": "हा परतावा आहे"
+    },
+    "categoryField": {
+      "label": "श्रेणी"
+    },
+    "notesField": {
+      "label": "नोंदी"
+    },
+    "selectNone": "काहीही निवडू नका",
+    "selectAll": "सर्व निवडा",
+    "shares": "शेअर(स्)",
+    "advancedOptions": "प्रगत विभाजन पर्याय…",
+    "SplitModeField": {
+      "label": "विभाजन पद्धत",
+      "evenly": "समान",
+      "byShares": "असमान – शेअर्सनुसार",
+      "byPercentage": "असमान – टक्केवारीनुसार",
+      "byAmount": "असमान – रकमेप्रमाणे",
+      "saveAsDefault": "डीफॉल्ट विभाजन पर्याय म्हणून जतन करा"
+    },
+    "DeletePopup": {
+      "label": "हटवा",
+      "title": "हा खर्च हटवायचा?",
+      "description": "तुम्हाला हा खर्च खरंच हटवायचा आहे का? हे उलटवता येणार नाही.",
+      "yes": "होय",
+      "cancel": "रद्द करा"
+    },
+    "attachDocuments": "दस्तऐवज जोडा",
+    "create": "तयार करा",
+    "creating": "तयार करत आहे…",
+    "save": "जतन करा",
+    "saving": "जतन करत आहे…",
+    "cancel": "रद्द करा",
+    "reimbursement": "परतावा"
+  }
+}

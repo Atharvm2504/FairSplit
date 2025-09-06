@@ -16,15 +16,16 @@ export function LocaleSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="-my-3 text-primary">
+        <Button variant="ghost" size="sm" className="text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:text-indigo-300 dark:hover:bg-indigo-900/50">
           <span>{localeLabels[locale]}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="glass-card">
         {Object.entries(localeLabels).map(([locale, label]) => (
           <DropdownMenuItem
             key={locale}
             onClick={() => setUserLocale(locale as Locale)}
+            className="hover:bg-indigo-50"
           >
             {label}
           </DropdownMenuItem>

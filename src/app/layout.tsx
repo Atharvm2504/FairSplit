@@ -67,29 +67,24 @@ function Content({ children }: { children: React.ReactNode }) {
   const t = useTranslations()
   return (
     <TRPCProvider>
-      <header className="fixed top-0 left-0 right-0 h-16 flex justify-between bg-white dark:bg-gray-950 bg-opacity-50 dark:bg-opacity-50 p-2 border-b backdrop-blur-sm z-50">
+      <header className="fixed top-0 left-0 right-0 h-16 flex justify-between bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/20 p-4 z-50">
         <Link
           className="flex items-center gap-2 hover:scale-105 transition-transform"
           href="/"
         >
-          <h1>
-            <Image
-              src="/logo-with-text.png"
-              className="m-1 h-auto w-auto"
-              width={(35 * 522) / 180}
-              height={35}
-              alt="Spliit"
-            />
-          </h1>
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-indigo-600 to-emerald-600">
+            <span className="text-white font-bold text-sm">FS</span>
+          </div>
+          <span className="text-xl font-bold text-gradient">FairSplit</span>
         </Link>
         <div role="navigation" aria-label="Menu" className="flex">
-          <ul className="flex items-center text-sm">
+          <ul className="flex items-center text-sm gap-2">
             <li>
               <Button
                 variant="ghost"
                 size="sm"
                 asChild
-                className="-my-3 text-primary"
+                className="text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:text-indigo-300 dark:hover:bg-indigo-900/50"
               >
                 <Link href="/groups">{t('Header.groups')}</Link>
               </Button>
@@ -106,39 +101,39 @@ function Content({ children }: { children: React.ReactNode }) {
 
       <div className="flex-1 flex flex-col">{children}</div>
 
-      <footer className="sm:p-8 md:p-16 sm:mt-16 sm:text-sm md:text-base md:mt-32 bg-slate-50 dark:bg-card border-t p-6 mt-8 flex flex-col sm:flex-row sm:justify-between gap-4 text-xs [&_a]:underline">
-        <div className="flex flex-col space-y-2">
-          <div className="sm:text-lg font-semibold text-base flex space-x-2 items-center">
-            <Link className="flex items-center gap-2" href="/">
-              <Image
-                src="/logo-with-text.png"
-                className="m-1 h-auto w-auto"
-                width={(35 * 522) / 180}
-                height={35}
-                alt="Spliit"
-              />
-            </Link>
-          </div>
-          <div className="flex flex-col space-y a--no-underline-text-white">
-            <span>{t('Footer.madeIn')}</span>
-            <span>
-              {t.rich('Footer.builtBy', {
-                author: (txt) => (
-                  <a href="https://scastiel.dev" target="_blank" rel="noopener">
-                    {txt}
-                  </a>
-                ),
-                source: (txt) => (
-                  <a
-                    href="https://github.com/spliit-app/spliit/graphs/contributors"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    {txt}
-                  </a>
-                ),
-              })}
-            </span>
+      <footer className="border-t border-white/20 dark:border-gray-700/20 bg-white/50 dark:bg-gray-900/50 py-12 mt-16">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-8">
+            <div className="flex flex-col space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-indigo-600 to-emerald-600">
+                  <span className="text-white font-bold text-sm">FS</span>
+                </div>
+                <span className="text-xl font-bold text-gradient">FairSplit</span>
+              </div>
+              <div className="flex flex-col space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <span>{t('Footer.madeIn')}</span>
+                <span>
+                  {t.rich('Footer.builtBy', {
+                    author: (txt) => (
+                      <a href="https://scastiel.dev" target="_blank" rel="noopener" className="text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300">
+                        {txt}
+                      </a>
+                    ),
+                    source: (txt) => (
+                      <a
+                        href="https://github.com/spliit-app/spliit/graphs/contributors"
+                        target="_blank"
+                        rel="noopener"
+                        className="text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+                      >
+                        {txt}
+                      </a>
+                    ),
+                  })}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
@@ -157,7 +152,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
-      <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
+      <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch gradient-bg">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"

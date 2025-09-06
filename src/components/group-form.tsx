@@ -117,25 +117,25 @@ export function GroupForm({
           )
         })}
       >
-        <Card className="mb-4">
+        <Card className="mb-6">
           <CardHeader>
-            <CardTitle>{t('title')}</CardTitle>
+            <CardTitle className="text-xl font-semibold text-gray-900">{t('title')}</CardTitle>
           </CardHeader>
-          <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{t('NameField.label')}</FormLabel>
+                  <FormLabel className="text-sm font-medium text-gray-700">{t('NameField.label')}</FormLabel>
                   <FormControl>
                     <Input
+                      label={t('NameField.placeholder')}
                       className="text-base"
-                      placeholder={t('NameField.placeholder')}
                       {...field}
                     />
                   </FormControl>
-                  <FormDescription>
+                  <FormDescription className="text-sm text-gray-500">
                     {t('NameField.description')}
                   </FormDescription>
                   <FormMessage />
@@ -148,16 +148,16 @@ export function GroupForm({
               name="currency"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{t('CurrencyField.label')}</FormLabel>
+                  <FormLabel className="text-sm font-medium text-gray-700">{t('CurrencyField.label')}</FormLabel>
                   <FormControl>
                     <Input
+                      label={t('CurrencyField.placeholder')}
                       className="text-base"
-                      placeholder={t('CurrencyField.placeholder')}
                       max={5}
                       {...field}
                     />
                   </FormControl>
-                  <FormDescription>
+                  <FormDescription className="text-sm text-gray-500">
                     {t('CurrencyField.description')}
                   </FormDescription>
                   <FormMessage />
@@ -171,11 +171,11 @@ export function GroupForm({
                 name="information"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{t('InformationField.label')}</FormLabel>
+                    <FormLabel className="text-sm font-medium text-gray-700">{t('InformationField.label')}</FormLabel>
                     <FormControl>
                       <Textarea
-                        rows={2}
-                        className="text-base"
+                        rows={3}
+                        className="text-base rounded-xl border-2 border-gray-200 bg-white/80 backdrop-blur-sm focus:border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                         {...field}
                         placeholder={t('InformationField.placeholder')}
                       />
@@ -188,13 +188,13 @@ export function GroupForm({
           </CardContent>
         </Card>
 
-        <Card className="mb-4">
+        <Card className="mb-6">
           <CardHeader>
-            <CardTitle>{t('Participants.title')}</CardTitle>
-            <CardDescription>{t('Participants.description')}</CardDescription>
+            <CardTitle className="text-xl font-semibold text-gray-900">{t('Participants.title')}</CardTitle>
+            <CardDescription className="text-gray-600">{t('Participants.description')}</CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-4">
               {fields.map((item, index) => (
                 <li key={item.key}>
                   <FormField
@@ -206,11 +206,11 @@ export function GroupForm({
                           Participant #{index + 1}
                         </FormLabel>
                         <FormControl>
-                          <div className="flex gap-2">
+                          <div className="flex gap-3">
                             <Input
-                              className="text-base"
+                              label={t('Participants.new')}
+                              className="text-base flex-1"
                               {...field}
-                              placeholder={t('Participants.new')}
                             />
                             {item.id &&
                             protectedParticipantIds.includes(item.id) ? (
@@ -218,17 +218,17 @@ export function GroupForm({
                                 <HoverCardTrigger>
                                   <Button
                                     variant="ghost"
-                                    className="text-destructive-"
+                                    className="text-red-500 hover:text-red-600 hover:bg-red-50"
                                     type="button"
                                     size="icon"
                                     disabled
                                   >
-                                    <Trash2 className="w-4 h-4 text-destructive opacity-50" />
+                                    <Trash2 className="w-4 h-4 opacity-50" />
                                   </Button>
                                 </HoverCardTrigger>
                                 <HoverCardContent
                                   align="end"
-                                  className="text-sm"
+                                  className="text-sm glass-card"
                                 >
                                   {t('Participants.protectedParticipant')}
                                 </HoverCardContent>
@@ -236,7 +236,7 @@ export function GroupForm({
                             ) : (
                               <Button
                                 variant="ghost"
-                                className="text-destructive"
+                                className="text-red-500 hover:text-red-600 hover:bg-red-50"
                                 onClick={() => remove(index)}
                                 type="button"
                                 size="icon"
@@ -256,27 +256,28 @@ export function GroupForm({
           </CardContent>
           <CardFooter>
             <Button
-              variant="secondary"
+              variant="outline"
               onClick={() => {
                 append({ name: '' })
               }}
               type="button"
+              className="w-full"
             >
               {t('Participants.add')}
             </Button>
           </CardFooter>
         </Card>
 
-        <Card className="mb-4">
+        <Card className="mb-6">
           <CardHeader>
-            <CardTitle>{t('Settings.title')}</CardTitle>
-            <CardDescription>{t('Settings.description')}</CardDescription>
+            <CardTitle className="text-xl font-semibold text-gray-900">{t('Settings.title')}</CardTitle>
+            <CardDescription className="text-gray-600">{t('Settings.description')}</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 gap-6">
               {activeUser !== null && (
                 <FormItem>
-                  <FormLabel>{t('Settings.ActiveUserField.label')}</FormLabel>
+                  <FormLabel className="text-sm font-medium text-gray-700">{t('Settings.ActiveUserField.label')}</FormLabel>
                   <FormControl>
                     <Select
                       onValueChange={(value) => {
@@ -284,28 +285,28 @@ export function GroupForm({
                       }}
                       defaultValue={activeUser}
                     >
-                      <SelectTrigger>
+                      <SelectTrigger className="rounded-xl border-2 border-gray-200 bg-white/80 backdrop-blur-sm focus:border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-500/20">
                         <SelectValue
                           placeholder={t(
                             'Settings.ActiveUserField.placeholder',
                           )}
                         />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="glass-card">
                         {[
                           { name: t('Settings.ActiveUserField.none') },
                           ...form.watch('participants'),
                         ]
                           .filter((item) => item.name.length > 0)
                           .map(({ name }) => (
-                            <SelectItem key={name} value={name}>
+                            <SelectItem key={name} value={name} className="hover:bg-indigo-50">
                               {name}
                             </SelectItem>
                           ))}
                       </SelectContent>
                     </Select>
                   </FormControl>
-                  <FormDescription>
+                  <FormDescription className="text-sm text-gray-500">
                     {t('Settings.ActiveUserField.description')}
                   </FormDescription>
                 </FormItem>
@@ -314,16 +315,17 @@ export function GroupForm({
           </CardContent>
         </Card>
 
-        <div className="flex mt-4 gap-2">
+        <div className="flex gap-4">
           <SubmitButton
             loadingContent={t(group ? 'Settings.saving' : 'Settings.creating')}
             onClick={updateActiveUser}
+            className="flex-1"
           >
             <Save className="w-4 h-4 mr-2" />{' '}
             {t(group ? 'Settings.save' : 'Settings.create')}
           </SubmitButton>
           {!group && (
-            <Button variant="ghost" asChild>
+            <Button variant="outline" asChild className="flex-1">
               <Link href="/groups">{t('Settings.cancel')}</Link>
             </Button>
           )}

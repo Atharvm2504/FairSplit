@@ -34,27 +34,28 @@ export default function GroupExpensesPageClient({
 
   return (
     <>
-      <Card className="mb-4 rounded-none -mx-4 border-x-0 sm:border-x sm:rounded-lg sm:mx-0">
-        <div className="flex flex-1">
-          <CardHeader className="flex-1 p-4 sm:p-6">
-            <CardTitle>{t('title')}</CardTitle>
-            <CardDescription>{t('description')}</CardDescription>
-          </CardHeader>
-          <CardHeader className="p-4 sm:p-6 flex flex-row space-y-0 gap-2">
+      <Card className="mb-6">
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 p-6">
+          <div>
+            <CardTitle className="text-xl font-semibold text-gray-900">{t('title')}</CardTitle>
+            <CardDescription className="text-gray-600">{t('description')}</CardDescription>
+          </div>
+          <div className="flex items-center gap-3">
             <ExportButton groupId={groupId} />
             {enableReceiptExtract && <CreateFromReceiptButton />}
-            <Button asChild size="icon">
+            <Button asChild>
               <Link
                 href={`/groups/${groupId}/expenses/create`}
-                title={t('create')}
+                className="flex items-center gap-2"
               >
                 <Plus className="w-4 h-4" />
+                {t('create')}
               </Link>
             </Button>
-          </CardHeader>
-        </div>
+          </div>
+        </CardHeader>
 
-        <CardContent className="p-0 pt-2 pb-4 sm:pb-6 flex flex-col gap-4 relative">
+        <CardContent className="p-6 pt-0">
           <ExpenseList />
         </CardContent>
       </Card>

@@ -17,18 +17,48 @@ export function GroupTabs({ groupId }: Props) {
   return (
     <Tabs
       value={value}
-      className="[&>*]:border overflow-x-auto"
+      className="overflow-x-auto"
       onValueChange={(value) => {
         router.push(`/groups/${groupId}/${value}`)
       }}
     >
-      <TabsList>
-        <TabsTrigger value="expenses">{t('Expenses.title')}</TabsTrigger>
-        <TabsTrigger value="balances">{t('Balances.title')}</TabsTrigger>
-        <TabsTrigger value="information">{t('Information.title')}</TabsTrigger>
-        <TabsTrigger value="stats">{t('Stats.title')}</TabsTrigger>
-        <TabsTrigger value="activity">{t('Activity.title')}</TabsTrigger>
-        <TabsTrigger value="edit">{t('Settings.title')}</TabsTrigger>
+      <TabsList className="grid w-full grid-cols-6 bg-gray-100 rounded-xl p-1">
+        <TabsTrigger 
+          value="expenses" 
+          className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm data-[state=active]:text-indigo-600"
+        >
+          {t('Expenses.title')}
+        </TabsTrigger>
+        <TabsTrigger 
+          value="balances"
+          className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm data-[state=active]:text-indigo-600"
+        >
+          {t('Balances.title')}
+        </TabsTrigger>
+        <TabsTrigger 
+          value="information"
+          className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm data-[state=active]:text-indigo-600"
+        >
+          {t('Information.title')}
+        </TabsTrigger>
+        <TabsTrigger 
+          value="stats"
+          className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm data-[state=active]:text-indigo-600"
+        >
+          {t('Stats.title')}
+        </TabsTrigger>
+        <TabsTrigger 
+          value="activity"
+          className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm data-[state=active]:text-indigo-600"
+        >
+          {t('Activity.title')}
+        </TabsTrigger>
+        <TabsTrigger 
+          value="edit"
+          className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm data-[state=active]:text-indigo-600"
+        >
+          {t('Settings.title')}
+        </TabsTrigger>
       </TabsList>
     </Tabs>
   )

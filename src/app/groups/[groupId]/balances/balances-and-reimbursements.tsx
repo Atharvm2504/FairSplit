@@ -34,11 +34,11 @@ export default function BalancesAndReimbursements() {
   const isLoading = balancesAreLoading || !balancesData || !group
 
   return (
-    <>
-      <Card className="mb-4">
+    <div className="space-y-6">
+      <Card>
         <CardHeader>
-          <CardTitle>{t('title')}</CardTitle>
-          <CardDescription>{t('description')}</CardDescription>
+          <CardTitle className="text-xl font-semibold text-gray-900">{t('title')}</CardTitle>
+          <CardDescription className="text-gray-600">{t('description')}</CardDescription>
         </CardHeader>
         <CardContent>
           {isLoading ? (
@@ -52,10 +52,11 @@ export default function BalancesAndReimbursements() {
           )}
         </CardContent>
       </Card>
-      <Card className="mb-4">
+      
+      <Card>
         <CardHeader>
-          <CardTitle>{t('Reimbursements.title')}</CardTitle>
-          <CardDescription>{t('Reimbursements.description')}</CardDescription>
+          <CardTitle className="text-xl font-semibold text-gray-900">{t('Reimbursements.title')}</CardTitle>
+          <CardDescription className="text-gray-600">{t('Reimbursements.description')}</CardDescription>
         </CardHeader>
         <CardContent>
           {isLoading ? (
@@ -72,7 +73,7 @@ export default function BalancesAndReimbursements() {
           )}
         </CardContent>
       </Card>
-    </>
+    </div>
   )
 }
 

@@ -2,8 +2,6 @@
 
 Spliit is a free and open source alternative to Splitwise. You can either use the official instance at [Spliit.app](https://spliit.app), or deploy your own instance:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fspliit-app%2Fspliit&project-name=my-spliit-instance&repository-name=my-spliit-instance&stores=%5B%7B%22type%22%3A%22postgres%22%7D%5D&)
-
 ## Features
 
 - [x] Create a group and share it with friends
@@ -35,7 +33,7 @@ Spliit is a free and open source alternative to Splitwise. You can either use th
 
 ## Contribute
 
-The project is open to contributions. Feel free to open an issue or even a pull-request! 
+The project is open to contributions. Feel free to open an issue or even a pull-request!
 Join the discussion in [the Spliit Discord server](https://discord.gg/YSyVXbwvSY).
 
 If you want to contribute financially and help us keep the application free and without ads, you can also:
@@ -45,7 +43,7 @@ If you want to contribute financially and help us keep the application free and 
 
 ### Translation
 
-The project's translations are managed using [our Weblate project](https://hosted.weblate.org/projects/spliit/spliit/). 
+The project's translations are managed using [our Weblate project](https://hosted.weblate.org/projects/spliit/spliit/).
 You can easily add missing translations to the project or even add a new language!
 Here is the current state of translation:
 
@@ -69,7 +67,7 @@ Here is the current state of translation:
 4. You can access the app by browsing to http://localhost:3000
 
 You could also pull it from the container registry:
-```docker pull ghcr.io/spliit-app/spliit:latest```
+`docker pull ghcr.io/spliit-app/spliit:latest`
 
 ## Health check
 
@@ -124,7 +122,3 @@ You can offer users to automatically deduce the expense category from the title.
 NEXT_PUBLIC_ENABLE_CATEGORY_EXTRACT=true
 OPENAI_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
-
-## License
-
-MIT, see [LICENSE](./LICENSE).

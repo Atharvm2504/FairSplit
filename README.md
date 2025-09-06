@@ -1,4 +1,5 @@
-[<img alt="Spliit" height="60" src="public/new-logo.jpg" />]
+<img alt="Spliit" height="60" src="public/new-logo.jpg" />
+
 
 FairSplit is a free and open source alternative to Splitwise.
 

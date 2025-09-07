@@ -116,9 +116,9 @@ function Content({ children }: { children: React.ReactNode }) {
                 <span>
                   {t.rich('Footer.builtBy', {
                     author: (txt) => (
-                      <a href="https://scastiel.dev" target="_blank" rel="noopener" className="text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300">
+                      <span className="text-indigo-600 dark:text-indigo-400">
                         {txt}
-                      </a>
+                      </span>
                     ),
                     source: (txt) => (
                       <a
